@@ -1,0 +1,10 @@
+.chip, .singleChip {
+
+    position: relative !important;
+    padding: 5px 29px !important;
+    width: 400px !important;
+}
+.closeIcon{
+    position: absolute !important;
+    left: 0 !important;
+}
