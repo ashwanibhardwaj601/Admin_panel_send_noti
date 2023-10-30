@@ -40,7 +40,7 @@ const Pushnotification = () => {
     setSelectedOptionsArray(selectedOptionNames);
     console.log('Selected Tokensggjghjtj:', selectedOptionNames);
 
-    const response = await axios.post('http://localhost:4000/api/sendmsg', {
+    const response = await axios.post('https://rocknwoods.website:3000/api/sendmsg', {
       title,
       body,
       token: selectedOptionNames,
@@ -53,7 +53,7 @@ const Pushnotification = () => {
 
   const handletoken = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/api/gettoken');
+      const response = await axios.get('https://rocknwoods.website:3000/api/gettoken');
 
       setOptions(response?.data?.result?.token);
       console.log(options);

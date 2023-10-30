@@ -26,7 +26,7 @@ const[color,setcolor] = useState('');
   const handlesignup = async e => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/auth/signup', {
+      const response = await axios.post('https://rocknwoods.website:3000/auth/signup', {
         email,
         password,
       });
